@@ -1,0 +1,136 @@
+body {
+	background-color: black;
+	font-family: arial;
+	color: lightgrey;
+}
+h1 {
+	
+	color: lightgrey;
+	font-family: arial;
+}
+h2 {
+
+	color: lightgrey;
+	font-family: arial;
+}
+#intro {
+	font-size: 20px;
+}
+img.center {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+iframe.center {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+p.games {
+	color: lightgrey;
+	font-family: arial;
+    font-size: 30px;
+}
+
+h2.recent {
+	color: white;
+}
+#games {
+	color: lightgrey;
+	font-family: arial;
+	font-size: 20px;
+}
+iframe.right {
+	margin-right: 20;
+	display: block;
+}
+abbr.click {
+	color: lightgrey;
+	font-size: 20px;
+}
+a.recent{
+	color: lightgrey;
+	font-size: 30px;
+}
+a.recent:hover {
+	color: blue;
+	background-color: transparent;
+	text-decoration: underline;
+}
+a.play {
+	color: white;
+	font-size: 20px;
+    text-align: center;
+    padding: 15px 20px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: green;
+}
+a.play:hover {
+	color: lightgrey;
+	font-size: 20px;
+    text-align: center;
+    padding: 15px 20px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: seagreen;
+}
+abbr.rating {
+	color: black;
+	font-size: 20px;
+    text-align: center;
+    padding: 5px 5px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: white;
+}
+#see {
+	color: white;
+	font-size: 20px;
+	text-decoration: underline;
+}
+#see:hover {
+	color: violet;
+	font-size: 20px;
+	text-decoration: underline;
+}
+address.contact {
+	text-align: center;
+	color: skyblue;
+}
+#feed {
+	color: black;
+	font-size: 30px;
+	text-align: center;
+}
+a.sub {
+	text-align: center;
+	color: white;
+	background-color: transparent;
+	text-decoration: none;
+	padding: 10px 10px;
+	display: inline-block;
+}
+a.sub:hover {
+	text-align: center;
+	color: lightgrey;
+	text-decoration: none;
+	background-color: transparent;
+	display: inline-block;
+	border: 1px solid grey;	
+}
+a.sub:active{
+text-align: center;
+color: red;
+text-decoration: underline;
+display: inline-block;
+border: 1px solid red;
+}
+a.help {
+	color: lightgrey;
+	text-decoration: underline;
+}
+a.help:hover {
+	color: blue;
+	text-decoration: underline;
+} 

@@ -1,0 +1,121 @@
+body {
+	background-color: black;
+	color: lightgrey;
+}
+#intro{
+	font-size: 20px;
+	font-family: arial;
+}
+a.button {
+	text-align: center;
+	color: white;
+	background-color: transparent;
+	text-decoration: none;
+	padding: 10px 10px;
+	display: inline-block;
+}
+a.button:hover {
+	text-align: center;
+	color: lightgrey;
+	text-decoration: none;
+	background-color: transparent;
+	display: inline-block;
+	border: 1px solid grey;	
+}
+a.button:active {
+	text-align: center;
+color: red;
+text-decoration: underline;
+display: inline-block;
+border: 1px solid red;
+}
+p.sub {
+	background-color: lightgrey;
+	color: black;
+	text-align: center;
+	font-size: 30px;
+	font-family: courier;
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  height: 300px;
+  transition: .01s ease;
+  backface-visibility: hidden;
+  width: 100%;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+.row {
+  display: -ms-flexbox; /*Using Flex Wrapping I have made the web page responsive*/
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that will be next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 200%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 200%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {   /*When browser size is less than 900 pixels it will show single images*/
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+#column_head {
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	font-family: courier;
+}
+p.info {
+	font-size: 15px;
+	color: blue;
+	text-align: center;
+}
+address.contact {
+	text-align: center;
+	color: skyblue;
+}

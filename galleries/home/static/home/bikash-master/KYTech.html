@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{ background-image: url('https://cdn-images-1.medium.com/max/2600/0*agilAmSlVa7vZSZe');
+}
+div.gallery {
+  border: 1px solid #ccc;
+}
+div.gallery:hover {
+  border: 10px solid #777;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.999999%;
+border:1px solid blue;
+}
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+<h3>Responsive Image Gallery</h3>
+
+  
+
+
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://cdn7.dissolve.com/p/D1129_13_201/D1129_13_201_1200.jpg">
+      <img src="https://cdn7.dissolve.com/p/D1129_13_201/D1129_13_201_1200.jpg"  alt='havasu water falls' width="600" height="400"  title='water falls'>
+    </a>
+    <div class="desc"> water falls</div>
+  </div>
+<br>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.w3schools.com/css/img_forest.jpg">
+      <img src="https://www.w3schools.com/css/img_forest.jpg" alt="Forest" width="600" height="400"  title='forest'>
+    </a>
+    <div class="desc">forest</div>
+  </div>
+<br>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://cdn9.dissolve.com/p/D574_238_183/D574_238_183_1200.jpg">
+      <img src="https://cdn9.dissolve.com/p/D574_238_183/D574_238_183_1200.jpg" alt="bridge" width="600" height="400"  title='Bridge'>
+    </a>
+    <div class="desc">bridge</div>
+  </div>
+<br>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://cdn7.dissolve.com/p/D9_37_301/D9_37_301_1200.jpg">
+      <img src="https://cdn7.dissolve.com/p/D9_37_301/D9_37_301_1200.jpg" alt="Aerial View" width="600" height="400"  title='Aerial View'>
+    </a>
+    <div class="desc">Aerial View</div>
+  </div>
+<br>
+</div>
+
+
+
+
+
+
+
+
+<div class="clearfix"></div>
+
+
+
+</body>
+</html>

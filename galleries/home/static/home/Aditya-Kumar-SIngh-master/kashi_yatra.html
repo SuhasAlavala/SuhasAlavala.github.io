@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+   <html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   <style>
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container {
+  
+  position: relative;
+  width: 100%;
+  height:auto;
+}
+.image {
+  display: block;
+  width: 100%;
+  height:200px;
+  float:left;
+  border-style: dotted;
+
+  
+}
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: lightblue;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+  
+}
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+  
+  
+}
+.text {
+  color: red;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+div.fixed {
+  background-color:lightblue; 
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-size: 20px;
+  width: 500px;
+  border: 4px solid orange;
+  color: red;
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: static;
+  top: 0;
+  padding: 0px;
+  background-color: #cae8ca;
+ 
+}
+
+p{
+  font-style: italic;
+  font-size: 20px;
+  color:black;
+}
+
+ #borderimg1 {
+  border: 20px solid transparent;
+  padding: 15px;
+  border-image: url(https://cdn.pixabay.com/photo/2016/10/24/22/46/valentine-1767544_960_720.png) 50 round;
+} 
+
+
+  
+div.ani1 {
+  width: 110px;
+  height: 40px;
+  padding-top: 3px;
+  color: black;
+  font-size: 20px;
+  background-color: orange;
+  font-weight: italic;
+  text-align: center;
+  position: relative;
+  -webkit-animation: mymove 4s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove 4s infinite;
+}
+div.ani2 {
+  width: 110px;
+  height: 40px;
+  padding-top: 3px;
+  color: black;
+  font-size: 20px;
+  background-color: white;
+  border-color: blue;
+  border-style: solid;
+  font-weight: italic;
+  text-align: center;
+  position: relative;
+  -webkit-animation: mymove 4s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove 4s infinite;
+}
+div.ani3 {
+  width: 110px;
+  height: 40px;
+  padding-top: 3px;
+  color: black;
+  font-size: 20px;
+  background-color: lightblue;
+  font-weight: italic;
+  text-align: center;
+  position: relative;
+  -webkit-animation: mymove 4s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove 4s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+#div1 {-webkit-animation-timing-function: linear;}
+#div2 {-webkit-animation-timing-function: ease;}
+#div3 {-webkit-animation-timing-function: ease-in;}
+#div4 {-webkit-animation-timing-function: ease-out;}
+#div5 {-webkit-animation-timing-function: ease-in-out;}
+
+/* Standard syntax */
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  from {left: 50px;}
+  to {left: 800px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+  from {left: 50px;}
+  to {left: 800px;}
+}
+
+
+
+caption{
+  font-size: 30px;
+  color:red;
+}
+    </style>
+    </head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <body style="background-image:url('https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
+     
+        
+      <h1 style="text-align: center; color:black; font-size: 36px">Image Gallery of India</h1>
+
+      <div class="sticky">
+    <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="">Home</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="">India</a></li>
+      <li><a href="">Animals in India</a></li>
+      <li><a href="">History of India</a></li>
+      <li><a href="">Beautiful places</a></li>
+      <li><a href="">Festivals of India</a></li>
+     
+        <li><a href="#">recommend ur pics</a></li>
+         <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+  
+</div>
+    
+
+       
+        <div class="fixed">This site is developed by Aditya Kumar Singh</div>
+        <p style="font-family:courier; color:blue; text-align: center;
+        font-size: 35px;">THE OLDEST CONTINUOUS CIVILIZATION </p>
+
+        
+ 
+
+        <h1 style="color: black; text-align:center;" > Favorite Places</h1>
+       
+        <div class="row">
+           <div class="column">
+           <div class="container">
+           <img src=https://images.thrillophilia.com/image/upload/s--bBRF-lgz--/c_fill,f_auto,fl_strip_profile,h_775,q_auto,w_1600/v1/images/photos/000/085/830/original/1525415163_shutterstock_462136018_(1).jpg.jpg?1525415163" class="image">
+           <div class="overlay">
+           <div class="text">Manali</div>
+           </div>
+           </div>
+         </div>
+
+          <div class="column">
+            <div class="container">
+             <img src="https://images.thrillophilia.com/image/upload/s--U9OKKmcC--/c_fill,f_auto,fl_strip_profile,h_775,q_auto,w_1600/v1/images/photos/000/077/799/original/1526288304_shutterstock_527473177.jpg.jpg?1526288304" alt="Avatar" class="image">
+              <div class="overlay">
+             <div class="text">Shimla</div>
+             </div>
+             </div>
+           </div>
+
+
+       <div class="column">
+        <<div class="container">
+         <img src="https://images.thrillophilia.com/image/upload/s--ffVDhkoA--/c_fill,f_auto,fl_strip_profile,h_775,q_auto,w_1600/v1/images/photos/000/013/736/original/1463259871_ladakh.jpg.jpg?1463259871" alt="Avatar" class="image">
+         <div class="overlay">
+         <div class="text">Ladakh</div>
+         </div>
+         </div>
+        </div>
+
+       <div class="column">   
+        <div class="container">
+         <img src="https://images.thrillophilia.com/image/upload/s--7MprSbd9--/c_fill,f_auto,fl_strip_profile,h_775,q_auto,w_1600/v1/images/photos/000/004/136/original/Haridwar.jpg.jpg?1458192627" alt="Avatar" class="image">
+         <div class="overlay">
+         <div class="text">Haridwar</div>
+         </div> 
+         </div>
+       </div> 
+       
+       <div class="column">  
+        <div class="container">
+         <img src="https://images.thrillophilia.com/image/upload/s--0D6qBK9S--/c_fill,f_auto,fl_strip_profile,h_446,q_auto,w_750/v1/images/photos/000/097/360/original/1527258790_Temples_in_Varanasi.jpg.jpg?1527258790" alt="Avatar" class="image">
+         <div class="overlay">
+         <div class="text">Ghats in Varanasi</div>
+         </div>
+         </div>
+       </div>
+
+       <div class="column">  
+        <div class="container">
+         <img src="https://images.thrillophilia.com/image/upload/s--4IPygJgA--/c_fill,f_auto,fl_strip_profile,h_600,q_auto,w_975/v1/images/photos/000/135/752/original/1540816023_shutterstock_415397137.jpg.jpg?1540816023" alt="Avatar" class="image">
+         <div class="overlay">
+         <div class="text">Udaipur</div>
+         </div>
+         </div>
+       </div>
+     </div>
+     
+       
+        
+
+
+       <h1 style="color: black; text-align:center;"> Top Historical Monuments</h1>
+    
+       
+      
+
+        <div class="row">
+            <div class="column">  
+            <div class="container">
+            <img src="https://k6u8v6y8.stackpathcdn.com/blog/wp-content/uploads/2015/11/taj-mahal.jpg" alt="Avatar" class="image" >
+             <div class="overlay">
+            <div class="text">Taj-Mahal</div>
+            </div>
+            </div>
+            </div>
+          
+            <div class="column">  
+            <div class="container">
+             <img src="https://k6u8v6y8.stackpathcdn.com/blog/wp-content/uploads/2015/11/gateway-of-india.jpg" alt="Avatar" class="image" >
+             <div class="overlay">
+              <div class="text">Gateway of India</div>
+               </div>
+               </div>
+                </div>
+              
+            <div class="column">  
+              <div class="container">
+
+              <img src="https://k6u8v6y8.stackpathcdn.com/blog/wp-content/uploads/2015/11/golden-temple.jpg" alt="Avatar" class="image">
+              <div class="overlay">
+                <div class="text">Golden Temple</div>
+               </div>
+               </div>
+                </div>
+
+            <div class="column">  
+              <div class="container"> 
+                <img src="https://k6u8v6y8.stackpathcdn.com/blog/wp-content/uploads/2015/11/Charminar.jpg" alt="Avatar" class="image" >
+               <div class="overlay"> 
+                <div class="text">Charminar</div>
+                </div>
+                 </div>
+                 </div>
+
+
+            <div class="column">  
+              <div class="container">    
+                <img src="https://k6u8v6y8.stackpathcdn.com/blog/wp-content/uploads/2013/12/agra-fort.jpg" alt="Avatar" class="image" >
+               <div class="overlay"> 
+                  <div class="text">Agra Fort</div>
+                </div>
+                 </div>
+                 </div> 
+             
+            <div class="column">  
+              <div class="container">  
+               <img src="https://k6u8v6y8.stackpathcdn.com/blog/wp-content/uploads/2015/11/city-palace-udaipur.jpg" alt="Avatar" class="image" >
+               <div class="overlay">
+                     <div class="text">Udaipur Palace</div>
+                </div>
+                 </div>
+                 </div>
+               </div>
+             
+
+              <h1 style="color: black; text-align:center;"">Animals in India</h1>
+               
+          <div class="row">
+            <div class="column">  
+            <div class="container">
+            <img src="http://cdn2.walkthroughindia.com/wp-content/uploads/2013/07/Indian-leopard.jpg" alt="Avatar" class="image" >
+             <div class="overlay">
+            <div class="text">Indian Leopard</div>
+            </div>
+            </div>
+            </div>
+          
+            <div class="column">  
+            <div class="container">
+             <img src="https://media.gettyimages.com/photos/mouthful-picture-id529799567?s=2048x2048" alt="Avatar" class="image" >
+             <div class="overlay">
+              <div class="text">Mouthful</div>
+               </div>
+               </div>
+                </div>
+              
+            <div class="column">  
+              <div class="container">
+
+              <img src="https://media.gettyimages.com/photos/wildlife-of-asian-elephants-herd-in-the-wild-picture-id1027480280?s=2048x2048" alt="Avatar" class="image">
+              <div class="overlay">
+                <div class="text">Asian Elephants</div>
+               </div>
+               </div>
+                </div>
+
+            <div class="column">  
+              <div class="container"> 
+                <img src="https://media.gettyimages.com/photos/bengal-tiger-hunting-picture-iddv1085023?s=2048x2048" alt="Avatar" class="image" >
+               <div class="overlay"> 
+                <div class="text">Bengal Tiger</div>
+                </div>
+                 </div>
+                 </div>
+
+
+            <div class="column">  
+              <div class="container">    
+                <img src="https://media.gettyimages.com/photos/the-red-panda-picture-id538095491?s=2048x2048" alt="Avatar" class="image" >
+               <div class="overlay"> 
+                  <div class="text">Indian Red Panda</div>
+                </div>
+                 </div>
+                 </div> 
+             
+            <div class="column">  
+              <div class="container">  
+               <img src="https://media.gettyimages.com/photos/holy-monkey-at-swayambhunath-monkey-temple-nepal-picture-id834455114?s=2048x2048" alt="Avatar" class="image" >
+               <div class="overlay">
+                     <div class="text">Indian Monkey</div>
+                </div>
+                 </div>
+                 </div>
+               </div>
+             
+        
+
+
+              <h1 style="color: black; text-align:center;"">Birds in India</h1>
+               
+               <div class="row">
+            <div class="column">  
+            <div class="container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Himalayan_Monal_Adult_Male_East_Sikkim_Sikkim_India.png" alt="Avatar" class="image" >
+             <div class="overlay">
+            <div class="text">Himalayan Monal</div>
+            </div>
+            </div>
+            </div>
+          
+            <div class="column">  
+            <div class="container">
+             <img src="https://media.gettyimages.com/photos/peacock-picture-id180699358?s=2048x2048" alt="Avatar" class="image" >
+             <div class="overlay">
+              <div class="text">Peacock</div>
+               </div>
+               </div>
+                </div>
+              
+            <div class="column">  
+              <div class="container">
+
+              <img src="https://media.gettyimages.com/photos/proud-cock-picture-id984515204?s=2048x2048" alt="Avatar" class="image">
+              <div class="overlay">
+                <div class="text">Proud-Cock</div>
+               </div>
+               </div>
+                </div>
+
+            <div class="column">  
+              <div class="container"> 
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Indian_pitta_%28Pitta_brachyura%29_Photograph_by_Shantanu_Kuveskar.jpg" alt="Avatar" class="image" >
+               <div class="overlay"> 
+                <div class="text">Indian Pitta</div>
+                </div>
+                 </div>
+                 </div>
+
+
+            <div class="column">  
+              <div class="container">    
+                <img src="https://image.shutterstock.com/image-photo/green-indian-ringnecked-parakeet-eating-450w-234657205.jpg" alt="Avatar" class="image" >
+               <div class="overlay"> 
+                  <div class="text">Green Indian Parrot</div>
+                </div>
+                 </div>
+                 </div> 
+             
+            <div class="column">  
+              <div class="container">  
+               <img src="http://orientalbirdimages.org/images/data/mrs._goulds_sb.jpg" alt="Avatar" class="image" >
+               <div class="overlay">
+                     <div class="text">Mrs. Gould</div>
+                </div>
+                 </div>
+                 </div>
+               </div>
+        
+            
+           <hr>
+
+           
+   
+
+  s <div class="clearfix c">
+   <img  style="float:right; height:240px; " src="https://media.gettyimages.com/photos/indian-flag-picture-id125563192?s=2048x2048" alt="indian flag" width="270" height="210" >
+  <p id ="borderimg1" style="font-size: 40px " >"If there is one place on the face of this Earth where all the dreams of living men have found a home from the very earliest days when Man began the dream of existence, it is India"
+  </p>
+</div>
+
+
+<div class="ani1" id="div2" >Incredible</div>
+<div class="ani1" id="div4">Novel</div>
+<div class="ani2" id="div1">Dazzling</div>
+<div class="ani3" id="div5">Immense</div>
+<div class="ani3" id="div5">Adorable</div>
+      
+
+          
+       
+      </body>
+     
+  </html>

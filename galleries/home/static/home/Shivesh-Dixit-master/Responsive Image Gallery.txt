@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+h2{
+text-align:center;
+text-shadow:1px 2px;
+}
+div.gallery {
+  border: 1px solid black;
+}
+
+div.gallery:hover {
+  border: 2px solid yellow;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.9999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body style="background-color:#787878;">
+
+<h2 ><span style="color:yellow;">Dragon </span> <span style="color:red ;">Ball Z</span></h2>
+
+<div class="responsive">
+  <div class="gallery">
+         <img src="d2.jpg" alt="Dragon" width="600" height="400">
+    
+    <div class="desc">Namekian Dragon</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="d3.jpg" alt="Super Saiyan" width="600" height="400">
+    <div class="desc">Super Saiyan Blue Goku</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="d4.jpg" alt="Gohan" width="600" height="400">
+    
+    <div class="desc">Super Saiyan Gohan</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="d6.jpg" alt="Super Saiyan Goku" width="600" height="400">
+    <div class="desc">Super Saiyan Goku</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+#gallery{
+         border:1px solid ;
+         }
+#gallery:hover{border:1px solid skyblue;
+               opacity:0.8;}
+#main{float:left;
+     margin:10px 10px 10px 10px;
+     }
+h1,h2{text-align:center;
+   }
+h2{border-radius:10px 10px 10px 10px;
+   background-color:orange;
+   }
+body{background-image:url("back3.jpg");}
+#text{text-align:center;
+     padding:5px;
+    }
+p{color:white;}
+
