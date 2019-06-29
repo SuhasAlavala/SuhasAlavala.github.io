@@ -1,0 +1,147 @@
+<head>
+<style>
+body {margin:0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #333;
+}
+.responsive {
+ 
+  float: left;
+  width: 24.999999%;
+height:30.99999%;
+
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    height:49.99999%;
+    
+
+
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+height::100%;
+
+
+  }
+}
+li {
+  float: left;
+}
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #111;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 0;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body style='background-color:#1abc9c'>
+<ul>
+  <li><a class="active" href="file:///C:/Users/Rajesh/Desktop/technex/kashi.html#">Home</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">restraunt</a>
+    <div class="dropdown-content">
+      <a href="file:///C:/Users/Rajesh/Desktop/technex/NVabc.html">NVabc</a>
+      <a href="file:///C:/Users/Rajesh/Desktop/technex/CCD.html">CCD</a>
+      
+      <a href="file:///C:/Users/Rajesh/Desktop/technex/VEGabc.html">VEGabc</a>
+    </div>
+  </li>
+  <li>
+                  {% if user.is_authenticated %}
+                <a href="{% url 'profile' %}">Profile</a>
+                <a href="{% url 'logout' %}">Logout</a>
+              {% else %}
+                <a href="{% url 'login' %}">Login</a>
+                <a href="{% url 'register' %}">Register</a>
+              {% endif %}
+  </li>
+  
+</ul>
+<NVabc><img  class='responsive' alt='thai chicken and coconut soup' title='thai chicken and coconut soup' src='https://files.hungryforever.com/wp-content/uploads/2018/02/14004811/thai-chicken-and-coconut-soup-29001-1.jpeg' >
+<img  class='responsive' alt='hyderabadi biriyani' title='hyderabadi biriyani' src='https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/jenbl572o0hsr8xfxfbs' >
+<img  class='responsive' alt='noodles' title='noodles' src='https://assets.bonappetit.com/photos/5c5d936be81bbf522a957993/16:9/w_1280,c_limit/sambolognese-ramen-noodles.jpg' >
+
+</NVabc>
+<CCD>
+<img  class='responsive' alt='chow chow bath' title='chow chow bath' src='https://files.hungryforever.com/wp-content/uploads/2018/02/17131829/chow-chow-bath-recipe-.jpg' >
+<img  class='responsive' alt='upma' title='upma' src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/A_photo_of_Upma.jpg/800px-A_photo_of_Upma.jpg' >
+<img  class='responsive' alt='poha' title='poha' src='https://www.cookwithmanali.com/wp-content/uploads/2014/08/Poha-Recipe-notitle-cwm.jpg' >
+
+</CCD>
+<img  class='responsive' alt='dosa' title='dosa' src='https://files.hungryforever.com/wp-content/uploads/2015/04/Featured-image-masala-dosa-recipe.jpg' >
+<img  class='responsive' alt='idli' title='idli' src='https://hebbarskitchen.com/wp-content/uploads/mainPhotos/idli-recipe-how-to-make-idli-soft-idli-recipe-idli-with-idli-rava-1-696x927.jpeg' >
+<img  class='responsive' alt='parotha' title='parotha' src='https://recipes.timesofindia.com/thumb/53109843.cms?imgsize=244340&width=800&height=800' >
+<img  class='responsive' alt='puri' title='puri' src='https://www.spiceupthecurry.com/wp-content/uploads/2015/02/poori-recipe-puri-recipe-8.jpg' >
+
+
+
+</body>
